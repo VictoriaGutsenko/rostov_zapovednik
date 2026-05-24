@@ -10,8 +10,6 @@
   padding: 0 20px;
 }
 
-
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -28,8 +26,6 @@
   text-transform: uppercase;
   letter-spacing: 4px;
 }
-
-
 
 .moreButton {
   background-color: #00c968;
@@ -51,14 +47,12 @@
   display: none;
 }
 
-
 .content {
   display: grid;
   grid-template-columns: 3.2fr 1fr; 
   gap: 20px; 
   height: 560px; 
 }
-
 
 .mainPhotoWrapper {
   position: relative;
@@ -86,7 +80,6 @@
   visibility: visible;
   z-index: 2; 
 }
-
 
 .arrowBtn {
   position: absolute;
@@ -122,7 +115,6 @@
   right: 20px;
 }
 
-
 .sideGallery {
   display: flex;
   flex-direction: column;
@@ -148,17 +140,13 @@
   transform: scale(1.05);
 }
 
-
-
-
-
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .photosSection {
-    padding: 60px 0px;
+    padding: 60px 40px;
   }
 
   .container {
-    padding: 0 40px 0 40px; 
+    padding: 0 40px; 
   }
 
   .header {
@@ -198,7 +186,6 @@
     aspect-ratio: 16 / 10; 
   }
 
-  /* Прячем третью картинку, оставляем две в ряд */
   .sidePhotoWrapper:nth-child(3) {
     display: none;
   }
@@ -221,5 +208,30 @@
   .moreButton {
     font-size: 18px;
     padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photosSection {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  .moreButton {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .mobileButtonWrapper {
+    justify-content: center;
   }
 }

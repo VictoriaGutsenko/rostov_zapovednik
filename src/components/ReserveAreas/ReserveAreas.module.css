@@ -1,121 +1,146 @@
 .reserveAreas {
-    
-    background-color: #E6E8E6; 
-    padding: 100px 0;
-    width: 100%;
+  background-color: #E6E8E6; 
+  padding: 100px 0;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.headerBlock {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mainTitle {
+  font-family: 'Intro', sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  color: #3b1c16;
+  margin: 0 0 15px 0;
+  letter-spacing: 3px;
+}
+
+.subTitle {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 18px;
+  color: #333333;
+  margin: 0;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px; 
+}
+
+.areaCard {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.svgNumber {
+  width: 50px; 
+  height: 50px; 
+  display: block;
+  margin-bottom: 25px;
+}
+
+.cardTitle {
+  font-family: 'Intro', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 15px 0;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  min-height: 48px; 
+  display: flex;
+  align-items: center;
+}
+
+.cardText {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.6;
+  max-width: 175px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .reserveAreas {
+    padding: 60px 40px;
   }
-  
+
   .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
   }
-  
- 
-  .headerBlock {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  
+
   .mainTitle {
-    font-family: 'Intro', sans-serif;
-    font-size: 55px;
-    font-weight: 800;
-    color: #3b1c16;
-    margin: 0 0 15px 0;
-    letter-spacing: 3px;
+    font-size: 32px;
   }
-  
+
   .subTitle {
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 18px;
-    color: #333333;
-    margin: 0;
+    font-size: 16px;
   }
-  
 
   .gridContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px; 
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
   }
-  
 
   .areaCard {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center;
+    width: 100%;
+    max-width: 280px; 
   }
-  
 
   .svgNumber {
-    width: 50px; 
-    height: 50px; 
-    display: block;
-    margin-bottom: 25px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
   }
-  
-  .cardTitle {
-    font-family: 'Intro', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: #000000;
-    margin: 0 0 15px 0;
-    letter-spacing: 2px;
-    line-height: 1.3;
-    min-height: 48px; 
-    display: flex;
-    align-items: center;
-  }
-  
-  .cardText {
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 18px;
-    color: #333333;
-    line-height: 1.6;
-    max-width: 175px;
-    margin: 0;
-  }
-  
 
-  @media (max-width: 900px) {
-    .reserveAreas {
-      padding: 60px 0;
-    }
-  
-    .mainTitle {
-      font-size: 32px;
-    }
-  
-    .subTitle {
-      font-size: 16px;
-    }
-  
- 
-    .gridContainer {
-      flex-direction: column;
-      align-items: center;
-      gap: 50px;
-    }
-  
-    .areaCard {
-      width: 100%;
-      max-width: 280px; 
-    }
-  
-    .svgNumber {
-      width: 40px;
-      height: 40px;
-      margin-bottom: 20px;
-    }
-  
-    .cardTitle {
-      min-height: auto;
-      margin-bottom: 10px;
-    }
+  .cardTitle {
+    min-height: auto;
+    margin-bottom: 10px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .reserveAreas {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+  }
+
+  .svgNumber {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 15px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .cardText {
+    font-size: 16px;
+  }
+}

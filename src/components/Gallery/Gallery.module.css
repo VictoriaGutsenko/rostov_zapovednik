@@ -1,4 +1,3 @@
-
 .gallerySection {
   padding: 100px 0;
   background-color: #ffffff;
@@ -47,7 +46,6 @@
   transform: scale(1.05);
 }
 
-
 .overlay {
   position: fixed;
   top: 0;
@@ -60,7 +58,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .modalContent {
   max-width: 80%;
@@ -76,7 +73,6 @@
   object-fit: contain;
   user-select: none; 
 }
-
 
 .closeBtn {
   position: absolute;
@@ -110,8 +106,6 @@
   transition: all 0.3s ease;
 }
 
-
-
 .closeBtn:hover {
   opacity: 1;
   transform: scale(1.1);
@@ -130,7 +124,6 @@
   right: 20px;
 }
 
-
 .closeIconImg {
   width: 30px;
   height: 30px;
@@ -145,15 +138,17 @@
   filter: brightness(0) invert(1); 
 }
 
-
-
 @media (max-width: 900px) {
   .gallerySection {
-    padding: 60px 0; 
+    padding: 60px 40px; 
   }
 
   .container {
     padding: 0 40px; 
+  }
+
+  .title {
+    font-size: 32px;
   }
 
   .grid {
@@ -161,19 +156,14 @@
     gap: 15px;
   }
 
- 
   .arrowBtn {
     padding: 10px;
   }
   
-  .title {
-    font-size: 32px;
-  }
-
-
   .leftArrow { 
     left: 10px; 
   }
+  
   .rightArrow { 
     right: 10px; 
   }
@@ -182,16 +172,43 @@
     max-width: 100%; 
   }
 
-
   .closeBtn {
     top: 20px;
     right: 20px;
   }
-
- 
   
   .arrowIconImg {
     filter: none;
   }
+}
 
+@media (max-width: 480px) {
+  .gallerySection {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .arrowIconImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .closeIconImg {
+    width: 24px;
+    height: 24px;
+  }
 }

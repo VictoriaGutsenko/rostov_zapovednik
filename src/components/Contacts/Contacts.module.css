@@ -28,7 +28,6 @@
 
 .topInfo p {
   margin-bottom: 15px;
-  
 }
 
 .grid {
@@ -64,7 +63,6 @@
   margin-bottom: 5px;
 }
 
-
 .contactItem a {
   color: #000000;
   text-decoration: underline;
@@ -73,7 +71,6 @@
 .emergencyBlock {
   text-align: center;
   margin-top: 60px;
-  
 }
 
 .emergencyText {
@@ -93,19 +90,20 @@
   display: block;
 }
 
-.phone:hover{
+.phone:hover {
   color: #00c968;
 }
 
-/* Адаптив */
 @media (max-width: 900px) {
-
   .contactsSection {
     padding: 60px 40px;
   }
 
+  .container {
+    padding: 0 40px;
+  }
+
   .pageTitle {
-    font-family: 'Intro', sans-serif;
     font-size: 32px;
   }
 
@@ -114,7 +112,7 @@
     gap: 0;
   }
 
-  .topInfo  {
+  .topInfo {
     margin-bottom: 15px;
     border-bottom: 1px solid #000000;
     padding-bottom: 40px;
@@ -123,7 +121,7 @@
 
   .column:first-child {
     border-right: none;
-    border-bottom: 1px solid #000000; /* Горизонтальная линия на мобиле */
+    border-bottom: 1px solid #000000;
     padding-right: 0;
     padding-bottom: 40px;
     margin-bottom: 40px;
@@ -136,13 +134,34 @@
   }
 
   .emergencyBlock {
-    text-align: center;
     margin-top: 0;
     padding-top: 40px;
   }
 
-
   .emergencyText {
     font-size: 26px;  
+  }
+}
+
+@media (max-width: 480px) {
+  .contactsSection {
+    padding: 40px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .pageTitle {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .emergencyText {
+    font-size: 20px;
+  }
+
+  .phone {
+    font-size: 28px;
   }
 }

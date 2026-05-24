@@ -100,12 +100,13 @@
   }
 }
 
+
 @media (max-width: 900px) {
   .hero {
     background-image: var(--bg-mobile);
     background-position: center center;
-    padding-top: 160px;
-    padding-bottom: 156px;
+    padding: 110px 40px;
+    
   }
 
   .container {
@@ -113,35 +114,43 @@
   }
 
   .content {
-    
-    padding: 0px 20px;
+    padding: 0;
   }
 
   .title {
     font-size: 38px;
-    padding-bottom: 34px;
+    padding-bottom: 20px;
     margin-bottom: 0;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
   }
+  
   .subtitle {
     margin: 0;
     font-size: 23px;
-    padding-bottom: 44px;
+    padding-bottom: 35px;
     margin-bottom: 0;
   }
 }
 
+
 @media (max-width: 480px) {
   .hero {
-    background-image: var(--bg-mobile);
-    background-position: center center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 80px 0;
   }
+  
   .title {
-    font-size: 1.8rem;
+    font-size: 28px;
+    letter-spacing: 1px; 
   }
+  
+  .subtitle {
+    font-size: 18px; 
+    padding-bottom: 25px;
+  }
+  
   .button {
     width: 100%;
+    font-size: 18px;
+    padding: 14px 20px;
   }
 }

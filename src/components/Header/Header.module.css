@@ -1,3 +1,4 @@
+
 .header {
   background-color: #FFFFFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -51,13 +52,12 @@
   display: flex;
   align-items: center;
   gap: 15px;
- 
 }
 
 /* --- ВЫПАДАЮЩИЙ СПИСОК ЯЗЫКОВ --- */
 .lang_wrap {
   position: relative;
-  min-width: 70px; /* Относительно этого блока будет позиционироваться выпадашка */
+  min-width: 70px;
 }
 
 .lang_btn {
@@ -81,22 +81,22 @@
   width: 10px;
   height: auto;
   display: block;
-  transition: transform 0.3s ease; /* Плавный поворот стрелочки */
+  transition: transform 0.3s ease;
 }
 
 .arrow_up {
-  transform: rotate(180deg); /* Переворачиваем стрелочку вверх */
+  transform: rotate(180deg);
 }
 
 .lang_dropdown {
   position: absolute;
-  top: 100%; /* Прилипает ровно под кнопкой */
+  top: 100%;
   left: 0;
   width: 100%;
   margin-top: 5px;
   background-color: #00C066;
   border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   z-index: 10;
   display: flex;
@@ -116,10 +116,9 @@
 }
 
 .lang_option:hover {
-  background-color: #030303; /* Зеленая заливка при наведении */
+  background-color: #030303;
   color: #FFFFFF;
 }
-
 
 .soc_icons {
   display: flex;
@@ -154,14 +153,10 @@
   object-fit: contain;
 }
 
-
-
-/* МОБИЛЬНЫЙ АДПТИВ */
-
+/* МОБИЛЬНЫЙ АДАПТИВ (включая 800x600) */
 .menu_container {
   display: contents;
 }
-
 
 .burger_btn,
 .close_btn {
@@ -184,13 +179,15 @@
   display: block;
 }
 
-
-
-@media (max-width: 600px) {
+/* Перехватываем 800x600 и всё что меньше */
+@media (max-width: 900px) {
   .burger_btn {
     display: block;
   }
 
+  .wrapper{
+    padding: 11px 40px;
+  }
 
   .menu_container {
     display: flex;
@@ -228,58 +225,58 @@
   .nav_link {
     font-size: 24px;
   }
-
  
   .action_wrap {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Центрируем обертки по вертикали */
+    align-items: center;
     justify-content: center;
     gap: 20px;
     margin-top: 60px;
     margin-left: 0;
   }
 
-  /* Обертка кнопки языка */
   .lang_wrap {
     min-width: 90px;
     display: flex;
-    align-items: center; /* Центрируем саму кнопку внутри обертки */
+    align-items: center;
   }
 
-  /* Сама кнопка языка */
   .lang_btn {
-    height: 45px; /* Жестко фиксируем высоту */
+    height: 45px;
     width: 100%;
     padding: 0 15px;
     margin: 0;
   }
 
-  /* Обертка соцсетей */
   .soc_icons {
     display: flex;
-    align-items: center; /* Центрируем иконки внутри их обертки */
+    align-items: center;
     gap: 15px;
   }
 
-  /* Сами иконки */
   .soc_link_ok,
   .soc_link_vk {
-    width: 45px; /* Размеры строго равны высоте кнопки RU */
+    width: 45px;
     height: 45px;
     margin: 0;
-    display: flex; /* Чтобы картинка внутри точно встала по центру */
+    display: flex;
     align-items: center;
     justify-content: center;
+  }  
+}
+
+
+@media (max-width: 480px) {
+  .nav_list {
+    gap: 40px; 
   }
 
-  
+  .nav_link {
+    font-size: 20px; 
+  }
 
-  
-
- 
-
-  
-
-  
+  .action_wrap {
+    margin-top: 40px;
+  }
 }

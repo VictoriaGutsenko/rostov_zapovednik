@@ -1,62 +1,76 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    height: 100%;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  height: 100%;
+}
+
+.imageWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.cardTitle {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 40px 0;
+  line-height: 1.3;
+  text-decoration: underline;
+}
+
+.card:hover .cardTitle {
+  color: #00c968;
+  text-decoration: none;
+}
+
+.cardDate {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 16px;
+  color: #666666;
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
   .imageWrapper {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover .image {
-    transform: scale(1.05);
-  }
-  
-  .cardTitle {
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: #000000;
-    margin: 0 0 40px 0;
-    line-height: 1.3;
-    text-decoration: underline;
-  }
-  
-  .card:hover .cardTitle {
-    color: #00c968;
-    text-decoration: none;
-  }
-  
-  .cardDate {
-    font-family: 'Inria Sans', sans-serif;
-    font-size: 16px;
-    color: #666666;
-    margin-top: auto;
+    margin-bottom: 15px;
   }
 
-  @media (max-width: 600px) {
-    .imageWrapper {
-      margin-bottom: 10px;
-    }
-  
-    .cardTitle {
-      font-size: 18px;
-      margin-bottom: 35px;
-    }
-  
-    .cardDate {
-      font-size: 14px;
-    }
+  .cardTitle {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
-  
+
+  .cardDate {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageWrapper {
+    margin-bottom: 10px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .cardDate {
+    font-size: 14px;
+  }
+}

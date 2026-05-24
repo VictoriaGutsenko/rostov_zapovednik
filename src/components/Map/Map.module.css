@@ -42,7 +42,6 @@
   display: block;
 }
 
-/* Пока карта не активирована — iframe не получает клики и скролл */
 .mapContainer:not(.active) iframe {
   pointer-events: none;
 }
@@ -50,10 +49,22 @@
 @media (max-width: 900px) {
   .mapSection {
     padding: 0 40px;
+    margin-bottom: 60px;
   }
 
   .mapContainer {
-    height: 600px;
+    height: 400px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .mapSection {
     padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  .mapContainer {
+    height: 300px;
   }
 }

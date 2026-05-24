@@ -10,7 +10,6 @@
   padding: 0 20px;
 }
 
-/* --- ШАПКА --- */
 .header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,6 @@
   letter-spacing: 5px;
 }
 
-/* --- КНОПКА --- */
 .moreButton {
   background-color: #00c968;
   color: #ffffff;
@@ -43,15 +41,12 @@
 
 .moreButton:hover {
   background-color: #030303;
-
 }
 
-/* Скрываем мобильную кнопку на компьютерах */
 .mobileButtonWrapper {
   display: none;
 }
 
-/* --- ТРЕК И КАРТОЧКИ (Десктоп) --- */
 .sliderContainer {
   width: 100%;
 }
@@ -108,29 +103,21 @@
   color: #666666;
 }
 
-
-
-
-
-
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .newsSection {
-    padding: 60px 0px;
+    padding: 60px 40px;
   }
 
   .container {
-    width: 100%;
-    padding: 0 40px 0 40px;
+    padding: 0 40px;
   }
 
   .header {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .sectionTitle {
-    font-size: 32px;
-    font-family: 'Intro', sans-serif;
-    letter-spacing: 5px;
+    font-size: 40px;
   }
 
   .desktopButton {
@@ -139,16 +126,11 @@
 
   .mobileButtonWrapper {
     display: block;
-    margin-top: 60px;
-  }
-
-  .moreButton {
-    font-size: 20px;
-    padding: 10px 20px;
+    margin-top: 50px;
+    
   }
 
   .sliderContainer {
-    width: 100%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
@@ -165,14 +147,40 @@
     width: max-content;
   }
 
-  /* Новый класс для обертки каждого слайда */
   .slideWrapper {
-    flex: 0 0 65vw;
+    flex: 0 0 45vw;
     scroll-snap-align: start;
-    margin-right: 12px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsSection {
+    padding: 40px 0;
   }
 
-  .slideWrapper:last-child {
-    margin-right: 0;
+  .container {
+    padding: 0 20px;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+
+  .mobileButtonWrapper {
+    margin-top: 30px;
+  }
+
+  .moreButton {
+    font-size: 18px;
+    padding: 14px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .slideWrapper {
+    flex: 0 0 75vw;
+    margin-right: 15px;
   }
 }
