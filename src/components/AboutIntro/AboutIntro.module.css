@@ -1,0 +1,218 @@
+
+.aboutIntro {
+  padding: 100px 0;
+  background-color: #fefefe;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainTitle {
+  font-family: 'Intro', sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  color: #3b1c16;
+  text-align: center;
+  margin: 0 0 60px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 200px;
+}
+
+
+.mapContainer {
+  position: relative; 
+  width: 100%;
+  margin-bottom: 80px;
+  
+}
+
+.mapImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mapNumber {
+  position: absolute;
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  background-color: rgba(40, 146, 17, 0.9);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 2; 
+}
+
+.num1 { top: 76%; left: 47%; }
+.num2 { top: 58%; left: 64%; }
+.num3 { top: 63%; left: 71%; }
+.num4 { top: 78%; left: 88%; }
+
+
+.legend {
+  position: absolute; 
+  top: -45px; 
+  right: 150px; 
+  width: 320px; 
+  z-index: 5; 
+  font-family: 'Inria Sans', sans-serif;
+  color: #000000;
+  text-align: left; 
+}
+
+.legendTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+}
+
+.legendList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.legendColorBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.colorSquare {
+  display: inline-block;
+  width: 45px;
+  height: 18px;
+  background-color: #8c5a35; 
+  border-radius: 9px; 
+}
+
+.textBlock {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subTitle {
+  font-family: 'Intro', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 35px 0;
+  text-transform: uppercase;
+  line-height: 1.3;
+  letter-spacing: 4px;
+}
+
+.description {
+  max-width: 790px;
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 19px;
+  color: #333333;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+.mobileBreak{
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .aboutIntro {
+      padding: 40px 0;
+    }
+  
+    .container {
+      padding: 0 40px; 
+    }
+  
+    .mainTitle {
+      font-size: 32px;
+      margin-bottom: 160px; 
+    }
+  
+    .mapContainer {
+      margin-bottom: 40px; 
+    }
+  
+    .legend {
+      position: absolute; 
+      top: -90px; 
+      right: 10px;
+      width: 180px; 
+      text-align: left; 
+    }
+  
+    .legendTitle {
+      font-size: 16px; 
+      margin: 0 0 8px 0;
+    }
+  
+    .legendList {
+      font-size: 16px; 
+      margin: 0 0 10px 0;
+      line-height: 1.4;
+    }
+  
+    .legendColorBox {
+      font-size: 16px;
+      gap: 6px;
+    }
+  
+    .colorSquare {
+      width: 25px; 
+      height: 10px;
+      border-radius: 5px;
+    }
+  
+    .mapNumber {
+      width: 14px; 
+      height: 14px;
+      font-size: 9px;
+    }
+  
+    .textBlock {
+      max-width: 100%;
+      text-align: center; 
+      margin: 0 auto;
+    }
+  
+    .subTitle {
+      font-size: 27px; 
+      letter-spacing: 3px;
+      margin: 0 0 20px 0;
+    }
+  
+    .description {
+      max-width: 100%;
+      font-size: 18px; 
+      line-height: 1.6;
+    }
+
+    .mobileBreak{
+        display: block
+    }
+    
+    .num3 { top: 62%; left: 71%; }
+
+  }
+  

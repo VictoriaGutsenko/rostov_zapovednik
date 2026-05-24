@@ -1,0 +1,117 @@
+.footer {
+    background-color: #291814; /* Темно-коричневый фон (как в блоке ФОТО) */
+    padding: 60px 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  /* --- ЛОГОТИП --- */
+  .logoLink {
+    flex-shrink: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .logoLink:hover {
+    opacity: 0.8; /* Легкое затухание при наведении на лого */
+  }
+  
+  .logo {
+    max-width: 220px; /* Подгони под размер своего экспортированного логотипа */
+    height: auto;
+  }
+  
+  /* --- НАВИГАЦИЯ --- */
+  .navColumns {
+    display: flex;
+    gap: 80px; /* Расстояние между колонками текста */
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между ссылками внутри колонки */
+  }
+  
+  /* Отдельный стиль для слова "Контакты", так как это не ссылка */
+  .columnTitle {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .column a {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 16px;
+    color: #dcdcdc; /* Светло-серый цвет для ссылок */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .column a:hover {
+    color: #00c968; /* При наведении текст становится зеленым (твой акцентный цвет) */
+  }
+  
+  /* --- СОЦСЕТИ --- */
+  .socials {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0;
+  }
+  
+  .socials a {
+    display: block;
+    transition: transform 0.2s ease;
+  }
+  
+  .socials a:hover {
+    transform: scale(1.1); /* Иконки слегка увеличиваются при наведении */
+  }
+  
+  .socials img {
+    width: 40px; /* Размер иконок ВК и ОК */
+    height: 40px;
+  }
+  
+  /* --- МОБИЛЬНАЯ ВЕРСИЯ --- */
+  /* Ставим 800px, чтобы футер не ломался на планшетах, где колонки могут не влезть */
+  @media (max-width: 800px) {
+    .footer {
+      padding: 50px 0;
+    }
+  
+    .content {
+      flex-direction: column; /* Выстраиваем всё в один вертикальный столбик */
+      align-items: center;
+      text-align: center;
+      gap: 50px;
+    }
+  
+    .navColumns {
+      flex-direction: column; /* Колонки тоже выстраиваются друг под другом */
+      gap: 40px;
+      width: 100%;
+    }
+  
+    .column {
+      align-items: center; /* Центрируем текст внутри колонок */
+    }
+  
+    .socials {
+      margin-top: -10px; /* Немного подтягиваем соцсети к тексту */
+    }
+  }
+  

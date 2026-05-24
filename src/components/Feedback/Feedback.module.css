@@ -1,0 +1,144 @@
+.feedbackSection {
+    padding: 100px 0;
+    background-color: #E5E7E0; /* Светло-серый фон, подгони точный код из Фигмы, если нужно */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* --- ЗАГОЛОВОК --- */
+  .sectionTitle {
+    font-family: 'Intro', sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    color: #3b1c16; 
+    text-align: center; 
+    margin: 0 0 50px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  /* --- ФОРМА --- */
+  .form {
+    max-width: 700px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 38px; /* Расстояние между полями ввода */
+    align-items: center; /* Кнопка по центру */
+  }
+  
+  /* --- ПОЛЯ ВВОДА --- */
+  .input, .textarea {
+    width: 100%;
+    padding: 18px 25px;
+    border: none;
+    background-color: #ffffff;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    outline: none; 
+    transition: box-shadow 0.3s ease;
+  }
+  
+ 
+  .input:focus, .textarea:focus {
+    box-shadow: 0 0 10px rgba(0, 201, 104, 0.2); 
+  }
+  
+ 
+  .input::placeholder, .textarea::placeholder {
+    color: #a3a3a3;
+  }
+  
+ 
+  .textarea {
+    resize: none; 
+    min-height: 200px;
+  }
+  
+  /* --- КНОПКА ОТПРАВКИ --- */
+  .submitBtn {
+    background-color: #00c968;
+    color: #ffffff;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 16px 35px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 12px; /* Чуть отбиваем кнопку от текста */
+  }
+  
+  .submitBtn:hover {
+    background-color: #030303; /* Черный цвет при наведении, как в других секциях */
+  }
+
+  .errorText {
+    color: #ff4d4f;
+    font-size: 0.85rem;
+    margin-top: -10px; /* Поднимаем текст ближе к инпуту */
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .inputError {
+    border: 1px solid #ff4d4f !important;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+  }
+  
+  .successMessage {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  
+  
+  /* --- МОБИЛЬНАЯ ВЕРСИЯ --- */
+  @media (max-width: 900px) {
+    .feedbackSection {
+      padding: 60px 0;
+    }
+  
+    .container {
+      padding: 0 40px;
+    }
+  
+    .sectionTitle {
+      font-size: 32px;
+      letter-spacing: 5px;
+      margin-bottom: 30px;
+    }
+  
+    .form {
+      gap: 15px; /* На мобилке поля чуть плотнее друг к другу */
+    }
+  
+    .input, .textarea {
+      padding: 15px 20px;
+    }
+  
+    .submitBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 15px 20px;
+      margin-top: 10px;
+    }
+  }
+  
