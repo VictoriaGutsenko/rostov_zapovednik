@@ -221,7 +221,7 @@
   }
 
   .legend {
-    top: -100px;
+    top: -120px;
     right: 0;
     width: 150px;
   }
@@ -231,7 +231,7 @@
   }
 
   .legendList {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .legendColorBox {
