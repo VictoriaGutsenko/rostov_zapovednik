@@ -245,7 +245,7 @@
   }
 
   .mainCardTitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .listTitle {
@@ -255,6 +255,7 @@
   .moreButton {
     width: 100%;
     box-sizing: border-box;
+    
   }
   
   .mobileButtonWrapper {
